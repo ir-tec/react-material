@@ -28,14 +28,14 @@ const SideBar = () => {
       >
         <Toolbar />
         <ListItem>
-          <Typography variant="subtitle1">پیشخوان</Typography>
+          <Typography variant="subtitle2">پیشخوان</Typography>
         </ListItem>
         {sideListItems.map((item, index) => {
           return (
             <>
               <Accordion key={index} className={classes.Drawer}>
                 <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-                  <Typography variant="subtitle1">{item.title}</Typography>
+                  <Typography variant="subtitle2">{item.title}</Typography>
                 </AccordionSummary>
                 {item.Links.map((link, index) => {
                   return (

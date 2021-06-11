@@ -21,7 +21,6 @@ const profileStyles = makeStyles((theme) => ({
     padding: "24px",
   },
   textField: {
-    borderRadius: "50px",
   },
 }));
 
