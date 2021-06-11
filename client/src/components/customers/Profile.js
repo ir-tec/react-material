@@ -15,7 +15,7 @@ import TextFields from "../TextField";
 import RadioGroups from "../RadioGroups";
 const Profile = () => {
   const history = useHistory();
-  const classes = profileStyles()
+  const classes = profileStyles();
   return (
     <Formik
       initialValues={initialValue}
@@ -30,16 +30,12 @@ const Profile = () => {
     >
       {(formik) => {
         return (
-          <Grid item container spacing={3} className={classes.profileContainer}>
+          <Grid container spacing={3} className={classes.profileContainer}>
             <Grid item md={12}>
               <Typography variant="body1">پروفایل</Typography>
               <Typography variant="subtitle2">مشتریان / پروفایل</Typography>
             </Grid>
-            <Grid
-              container
-              item
-          
-            >
+            <Grid container item>
               <Grid item>
                 <Typography variant="subtitle2">پروفایل</Typography>
               </Grid>

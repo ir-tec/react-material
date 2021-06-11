@@ -9,13 +9,15 @@ import {
 } from "@material-ui/core";
 
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import { useHistory } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 import { sideListItems } from "./customers/customersListMenu";
 import { useStyles } from "../styles/styles";
 import React from "react";
 const SideBar = () => {
   const history = useHistory();
   const classes = useStyles();
+  const location = useLocation();
+  console.log(location.pathname);
   return (
     <>
       <Drawer
@@ -38,7 +40,14 @@ const SideBar = () => {
                 {item.Links.map((link, index) => {
                   return (
                     <AccordionDetails key={index}>
-                      <ListItem button>
+                      <ListItem
+                        className={
+                          location.pathname === `/${link.link}`
+                            ? classes.activeList
+                            : null
+                        }
+                        style={{ cursor: "pointer" }}
+                      >
                         <Typography
                           onClick={() => history.push(`/${link.link}`)}
                           variant="subtitle2"

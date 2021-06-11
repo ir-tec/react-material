@@ -4,10 +4,12 @@ const drawerWidth = 200;
 export const useStyles = makeStyles((theme) => ({
   Drawer: {
     width: drawerWidth,
+    zIndex: theme.zIndex.appBar - 1,
   },
   MainBody: {
     width: "100%",
     margin: "auto",
+    background: "blue",
   },
   LayoutRoot: {
     display: "flex",
@@ -20,14 +22,18 @@ export const useStyles = makeStyles((theme) => ({
     backgroundColor: "rgba(0,0,1,0.1)",
   },
   AppBar: {
-    zIndex: theme.zIndex.drawer + 2,
+    zIndex: theme.zIndex.drawer + 1,
     background: `linear-gradient(to right, ${theme.palette.secondary.light} ,  ${theme.palette.secondary.main});`,
   },
-  
 
   Avatar: {
     width: theme.spacing(2),
     height: theme.spacing(2),
+  },
+  activeList: {
+    backgroundColor: theme.palette.primary.main,
+    color: "white",
+    borderRadius: "50px",
   },
 }));
 

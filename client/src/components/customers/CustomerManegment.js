@@ -43,7 +43,7 @@ const CustomerManegment = () => {
   });
 
   return (
-    <Grid item container spacing={3}>
+    <Grid container>
       <Grid container item>
         <Grid item md={6} sm={12}>
           <Typography variant="subtitle1">مدیریت مشتریان</Typography>
