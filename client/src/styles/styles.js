@@ -9,7 +9,8 @@ export const useStyles = makeStyles((theme) => ({
   MainBody: {
     width: "100%",
     margin: "auto",
-    background: "blue",
+    display:"flex",
+    justifyContent:"center",
   },
   LayoutRoot: {
     display: "flex",

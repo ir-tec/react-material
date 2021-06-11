@@ -7,10 +7,10 @@ import { Grid, Toolbar } from "@material-ui/core";
 function Layout({ children }) {
   return (
     <RTL>
-      <div  style={{ display: "flex" }}>
+      <div style={{ display: "flex" }}>
         <NavBar />
         <SideBar />
-        <Grid container md={10} >
+        <Grid container >
           <Toolbar />
           {children}
         </Grid>

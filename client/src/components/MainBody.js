@@ -11,16 +11,15 @@ const MainBody = () => {
   const classes = useStyles();
   return (
     <>
-      <Route exact path={`${path}customers/profile`}>
-        <Grid container >
+      <Grid container item md={12} className={classes.MainBody}>
+        <Route exact path={`${path}customers/profile`}>
           <Profile />
-        </Grid>
-      </Route>
-      <Route exact path={`${path}customers/customerManegment`}>
-        <Grid container >
+        </Route>
+
+        <Route exact path={`${path}customers/customerManegment`}>
           <CustomerManegment />
-        </Grid>
-      </Route>
+        </Route>
+      </Grid>
     </>
   );
 };

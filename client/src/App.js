@@ -13,6 +13,7 @@ export default function App() {
     typography: {
       fontFamily: "Vazir,Roboto",
     },
+    shape:{borderRadius:"50px"}
   });
 
 

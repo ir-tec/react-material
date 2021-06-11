@@ -40,7 +40,7 @@ const SideBar = () => {
                 {item.Links.map((link, index) => {
                   return (
                     <AccordionDetails key={index}>
-                      <ListItem
+                      <ListItem key={index}
                         className={
                           location.pathname === `/${link.link}`
                             ? classes.activeList
