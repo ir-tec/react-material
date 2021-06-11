@@ -10,18 +10,18 @@ const MainBody = () => {
   const { path } = useRouteMatch();
   const classes = useStyles();
   return (
-    <div>
+    <>
       <Route exact path={`${path}customers/profile`}>
-        <div>
+        <Grid container >
           <Profile />
-        </div>
+        </Grid>
       </Route>
       <Route exact path={`${path}customers/customerManegment`}>
-        <div>
+        <Grid container >
           <CustomerManegment />
-        </div>
+        </Grid>
       </Route>
-    </div>
+    </>
   );
 };
 

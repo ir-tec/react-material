@@ -43,7 +43,7 @@ const CustomerManegment = () => {
   });
 
   return (
-    <Grid container>
+    <Grid container direction="column" spacing={2}>
       <Grid container item>
         <Grid item md={6} sm={12}>
           <Typography variant="subtitle1">مدیریت مشتریان</Typography>
@@ -137,7 +137,7 @@ const CustomerManegment = () => {
           </FormControl>
         </Grid>
       </Grid>
-      <Grid item md={12} sm={12} xs={12}>
+      <Grid item>
         <TableContainer>
           <Table size="small">
             <TableHead>
