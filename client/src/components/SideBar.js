@@ -20,7 +20,7 @@ const SideBar = () => {
     <>
       <Drawer
         open={true}
-        variant="persistent"
+        variant="permanent"
         anchor="left"
         className={classes.Drawer}
       >

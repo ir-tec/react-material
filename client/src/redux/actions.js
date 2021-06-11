@@ -40,7 +40,7 @@ export const saveUserData = (users) => {
 
 export const findAllUser = async () => {
   await axios
-    .get("https://-reactjs.herokuapp.com/allUsers")
+    .get("https://material-reactjs.herokuapp.com/allUsers")
     .then((res) => {
       return Store.dispatch(findAllUsers(res.data));
     })
