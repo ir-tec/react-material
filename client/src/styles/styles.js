@@ -20,18 +20,14 @@ export const useStyles = makeStyles((theme) => ({
     backgroundColor: "rgba(0,0,1,0.1)",
   },
   AppBar: {
-    zIndex: theme.zIndex.drawer + 1,
+    zIndex: theme.zIndex.drawer + 2,
     background: `linear-gradient(to right, ${theme.palette.secondary.light} ,  ${theme.palette.secondary.main});`,
   },
-  Toolbar: {
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-between",
-  },
+  
 
   Avatar: {
-    width: theme.spacing(3),
-    height: theme.spacing(3),
+    width: theme.spacing(2),
+    height: theme.spacing(2),
   },
 }));
 

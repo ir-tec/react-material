@@ -38,9 +38,7 @@ const Profile = () => {
             <Grid
               container
               item
-              
-              // className={classes.profile}
-              style={{ backgroundColor: "blueviolet" }}
+          
             >
               <Grid item>
                 <Typography variant="subtitle2">پروفایل</Typography>

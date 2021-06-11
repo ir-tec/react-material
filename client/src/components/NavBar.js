@@ -58,7 +58,7 @@ const NavBar = () => {
             <Badge badgeContent={3} color="primary">
               <MailIcon />
             </Badge>
-            <Badge badgeContent={2} color="primary">
+            <Badge badgeContent={2} color="error">
               <NotificationsIcon />
             </Badge>
 
@@ -66,7 +66,7 @@ const NavBar = () => {
               overlap="circle"
               variant="dot"
               anchorOrigin={{
-                vertical: "top",
+                vertical: "bottom",
                 horizontal: "right",
               }}
             >
