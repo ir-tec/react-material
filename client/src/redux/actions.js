@@ -31,7 +31,7 @@ export const findUser = (userObject, Cuser) => {
 
 export const saveUserData = (users) => {
   axios
-    .post("https://react-customer-management.herokuapp.com/", users)
+    .post("https://material-reactjs.herokuapp.com/", users)
     .then((res) => {
       console.log(res.data);
       return Store.dispatch(addUser(res));
@@ -40,7 +40,7 @@ export const saveUserData = (users) => {
 
 export const findAllUser = async () => {
   await axios
-    .get("https://react-customer-management.herokuapp.com/allUsers")
+    .get("https://material-reactjs.herokuapp.com/allUsers")
     .then((res) => {
       return Store.dispatch(findAllUsers(res.data));
     })
